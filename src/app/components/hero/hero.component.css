@@ -1,0 +1,40 @@
+.hero {
+  padding: 5rem 0 4rem;
+  text-align: center;
+  background:
+    radial-gradient(1200px 400px at 50% -100px, rgba(233, 69, 96, 0.08), transparent 70%),
+    var(--bg);
+}
+
+.hero-inner {
+  max-width: 760px;
+}
+
+.hero-eyebrow {
+  color: var(--highlight);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  margin: 0 0 1rem;
+  letter-spacing: -0.025em;
+}
+
+.hero-tagline {
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  color: var(--text-muted);
+  margin: 0 auto 2rem;
+  max-width: 600px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

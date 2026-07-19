@@ -1,0 +1,35 @@
+<article class="card" [class.featured]="project.featured">
+  <div class="card-banner" [attr.aria-label]="project.name + ' banner'">
+    <span class="card-banner-label">{{ project.name }}</span>
+  </div>
+
+  <div class="card-body">
+    @if (project.featured) {
+      <span class="badge">Featured</span>
+    }
+
+    <h3 class="card-title">
+      <a [routerLink]="['/projects', project.slug]" class="card-title-link">
+        {{ project.name }}
+      </a>
+    </h3>
+
+    <p class="card-tagline">{{ project.tagline }}</p>
+
+    <div class="card-tech">
+      @for (tech of project.techStack.slice(0, 5); track tech) {
+        <span class="chip">{{ tech }}</span>
+      }
+      @if (project.techStack.length > 5) {
+        <span class="chip">+{{ project.techStack.length - 5 }} more</span>
+      }
+    </div>
+
+    <div class="card-actions">
+      <a [routerLink]="['/projects', project.slug]" class="btn btn-outline">View details</a>
+      @if (project.githubUrl && !project.githubUrl.startsWith('[PLACEHOLDER')) {
+        <a [href]="project.githubUrl" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+      }
+    </div>
+  </div>
+</article>

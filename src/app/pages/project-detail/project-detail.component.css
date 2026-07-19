@@ -1,0 +1,43 @@
+.project-detail {
+  display: grid;
+  gap: 2rem;
+}
+.detail-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.tech-span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-soft);
+  color: var(--text);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+}
+.project-highlights h2 {
+  margin-top: 1.5rem;
+}
+.project-highlights ul {
+  padding-left: 1.5rem;
+}
+.project-actions {
+  margin-top: 2rem;
+}
+.btn-outline {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline:hover {
+  background: var(--text);
+  color: var(--bg);
+}
