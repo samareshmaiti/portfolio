@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'agent-pipeline',
     name: 'Agent Pipeline',
-    tagline: 'AI agent pipeline with RAG, memory, and tool calling',
+    tagline: 'Multi agent AI pipeline with RAG, memory, and tool calling',
     description: 'A sophisticated AI-powered chatbot application built with Spring Boot, Spring AI, LangChain4j, and LangGraph4j. Features Retrieval-Augmented Generation (RAG), conversation memory, JWT authentication, document processing, and tool integration.',
     techStack: [
       'Spring Boot',
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     role: 'Solo developer and architect, responsible for end-to-end design, development, and deployment',
     featured: false,
     githubUrl: 'https://github.com/samareshmaiti/LangGraph-RAG',
-    liveUrl: '[PLACEHOLDER]',
+    //liveUrl: '[PLACEHOLDER]',
   }
   
 ];
